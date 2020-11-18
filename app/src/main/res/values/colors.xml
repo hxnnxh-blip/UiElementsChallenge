@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="charcoal">#3A4A52</color>
+    <color name="Cognac">#A58075</color>
+    <color name="sand_dollar">#E7D6C0</color>
+    <color name="state">#B2BABD</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
