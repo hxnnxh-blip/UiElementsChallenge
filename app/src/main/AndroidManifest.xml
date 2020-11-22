@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UiElementsChallenge">
-        <activity android:name=".QueuedSongsActivity"></activity>
+        <activity android:name=".AlbumsActivity"></activity>
+        <activity android:name=".QueuedSongsActivity" />
         <activity android:name=".AlbumDetailsActivity" />
-        <activity android:name=".AlbumbsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
