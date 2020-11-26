@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
 
 class MainActivity : AppCompatActivity() {
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
     {
         menuInflater.inflate(R.menu.context_menu, menu)
         super.onCreateContextMenu(menu, v, menuInfo)
+
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
@@ -69,9 +71,14 @@ class MainActivity : AppCompatActivity() {
             R.id.addToQueue -> {
 
                 val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
-                val listItem: String = albumsArray[info.position]
+//                val listItem: String = albumsArray[info.position]
                 albumSongs.add(albumsArray[info.position])
-                Toast.makeText(this, "Added: $listItem", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this, "Added: $listItem", Toast.LENGTH_SHORT).show()
+                val snackBar = Snackbar.make(findViewById(R.id.albumListView), "Go to queued songs", Snackbar.LENGTH_SHORT)
+                snackBar.setAction("Go",View.OnClickListener {
+                    startActivity(Intent(this, QueuedSongsActivity::class.java))
+                })
+                snackBar.show()
                 true
             }
             else -> super.onContextItemSelected(item)

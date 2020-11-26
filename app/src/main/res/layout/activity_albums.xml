@@ -7,6 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".AlbumsActivity">
 
+    <ImageView
+        android:id="@+id/hogwarts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hogwarts" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/hogwarts"
+        app:layout_constraintTop_toTopOf="@+id/hogwarts"
+        app:srcCompat="@color/charcoal" />
+
     <GridView
         android:id="@+id/imageGridView"
         android:layout_width="match_parent"
