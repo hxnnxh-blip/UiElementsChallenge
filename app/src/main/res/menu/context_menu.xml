@@ -7,4 +7,15 @@
         app:showAsAction="always">
     </item>
 
+    <item android:id="@+id/editSong"
+        android:title="Edit"
+        app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/deleteSong"
+        android:title="Delete"
+        app:showAsAction="always">
+    </item>
+
+
 </menu>

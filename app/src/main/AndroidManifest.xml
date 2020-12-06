@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UiElementsChallenge">
         <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".CRUD.NewSong" />
+        <activity android:name=".CRUD.NewAlbum" />
         <activity android:name=".AlbumsActivity" />
         <activity android:name=".QueuedSongsActivity" />
+        <activity android:name=".CRUD.UpdateSong" />
+        <activity android:name=".CRUD.UpdateAlbum" />
         <activity android:name=".AlbumDetailsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

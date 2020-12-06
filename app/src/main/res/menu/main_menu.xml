@@ -14,4 +14,8 @@
         app:showAsAction="ifRoom">
     </item>
 
+    <item android:id="@+id/add_a_song"
+        android:title="Add a song">
+    </item>
+
 </menu>
